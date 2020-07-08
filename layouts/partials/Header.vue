@@ -4,7 +4,7 @@
   
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
     <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-    <router-link to="/contact">
+    <router-link to="/home">
     <v-toolbar-title class="white--text">NOVEL</v-toolbar-title>
     </router-link>
     <v-spacer></v-spacer>
