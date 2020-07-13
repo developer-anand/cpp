@@ -1,48 +1,79 @@
 <template>
-  <v-footer padless
-   dark>
-
-    <v-card
-      flat
-      tile
-      class="indigo lighten-1 white--text text-center"
-    >
-      <v-card-text>
-        <strong class="subheading">Get conntected with us on Social Networks!</strong>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-          icon
-        >
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-text>
-
-      <v-card-text class="white--text pt-0">
-        NOVEL enterprices Control Electrical Engineering provide complete mechanical and electrical services from design, installation, commissioning and maintenance to long term facilities management in offices, schools,hospitals, cinemas, retail premises, nightclubs and high end private residences.
-        </v-card-text>
-
-      <v-divider></v-divider>
-
-      <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-card-text>
-    </v-card>
-  </v-footer>
-   
+ <div class="page-content">
+  
+ <footer>
+   <div class="footer-container">
+     <div class="left-c">
+       <img src="~/assets/footerslogo.png" alt="" class="logo">
+       <p>Based in the North West London, Control Electrical Engineers Ltd have been trading since 1991,
+          providing professional services to domestic social commercial and industrial customers in both 
+          the private and public sectors, across England (U.K.)
+          
+      </p>  
+     
+     <p class="right-text">
+      <br>
+          © 2019 CEE. All rights reserved.
+     </p>
+     </div>
+     <div class="right-col">
+       <h1>Contact Us</h1>
+       <div class="border">
+         <p>Unit 6, 998 North Circular Road, Staples Corner,
+          London NW2 7JR
+          <br>
+          020 8452 5757
+          <br>
+          projects@cee.uk.com
+          </p>
+       </div>
+     </div>
+   </div>
+ </footer>
+ </div>
 </template>
 
 <script>
   export default {
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
+   
   }
 </script>
 
+<style scoped>
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  background: #f1f1f1;
+  padding: 90px 0;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:inherit;
+}
+p{
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.border{
+  white-space: pre-line;
+  display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+        margin-top: .25em;
+}
+</style>

@@ -2,49 +2,88 @@
   <div class="container">
    
     <main>
-      <h1 class="head">Welcome to NOVEL World</h1>
-      <img src="data:image/jpeg;base64,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" class="novel-img" alt="Error">
-      <v-carousel>
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-      reverse-transition="fade-transition"
-      transition="fade-transition"
-    ></v-carousel-item>
-  </v-carousel>
+      <img class="sam" src="~/assets/sam.png">
+         <br><br>
+      <h1>Main Services</h1>
+      <br>
+      <br>
+      <p>
+        
+              Providing electrical services for over 30 years, which has
+              allowed us to diversify, and offer our customers a one stop shop
+              for all electrical, ancillary services, air-conditioning and
+              ventilation on a design and build basis.
+            
+      </p>
+      <br>
+      <p>
+        
+              All work is carried out to BS 7671, and we comply with all IEEE
+              17th Edition writing regulations, keeping us one step ahead of
+              our competitors.
+      </p>
+      <div class="service">
+      
+             <img src="~/assets/service.png" 
+             alt="Anand Jha" 
+              />
+              <br>
+              <br>
+               <img src="~/assets/work.png" 
+             alt="Anand Jha" 
+              />
+              <br>
+              <br>
+              <br>
+               <img src="~/assets/vision.png" 
+             alt="Anand Jha" 
+              />
+              </div>
+    
     </main>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from 'vue'
-  export default Vue.extend({
-  
-    data () {
-      return {
-        items: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-          },
-        ],
-      }
-    },
-  })
+
+export default Vue.extend({
+  components: {
+
+  },
+  head() {
+    return{
+      title: "cee"
+    }
+  }
+})
 </script>
 
 <style>
-.head{
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+}
+.sam{
+ 
+  height: 70vh;
+  margin-top: 0;
 
+}
+h1 {
+  font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: Spartan;
+}
 </style>

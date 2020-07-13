@@ -1,79 +1,76 @@
 <template>
-   <v-toolbar>
-     
-  
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-    <router-link to="/home">
-    <v-toolbar-title class="white--text">NOVEL</v-toolbar-title>
-    </router-link>
-    <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat nuxt-link to="/home">Home</v-btn>
-      <v-btn flat nuxt-link to="/about">About</v-btn>
-      <v-btn flat nuxt-link to="/projects">Projects</v-btn>
-      <v-btn flat nuxt-link to="/contact">Contact Us</v-btn>
-    </v-toolbar-items>
-    
-    <v-toolbar-items class="hidden-md-and-up">
-    
-  <v-sheet
-    height="400"
-    class="overflow-hidden"
-    style="position: relative;"
-  >
-       <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-    >
-      <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
-        </v-list-item-avatar>
-
-        <v-list-item-content>
-          <v-list-item-title>John Leider</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-divider></v-divider>
-
-      <v-list dense>
-
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-  </v-sheet>
-
-    </v-toolbar-items>
-     
-  </v-toolbar>
+        <header>
+          <span>
+            <a href="./" >
+        <img src="~/assets/logo.png" class="logo" />
+            </a>
+          </span>
+        <ul>
+          <li>
+            <nuxt-link to="/about">About</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/carrers">Carrers</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/projects">Projects</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/contact">Contact Us</nuxt-link>
+          </li>
+        </ul>
+      </header>
 </template>
+<style lang="scss" scoped>
+    header{
+        background: #fff;
+        margin-bottom: 0;
+        height: 150px;
+        color: red;
+        width: (100 - 14em);
+        padding: 0 7em;
+        height:8em;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        .logo {
+            padding: 0;
+            margin-bottom: 0;
+            float: right;
+            width: 350px;
+            height: 100px;
+            margin-left: 5px;
+            top: 50%;
+           
+        }
+        a{
+           cursor: pointer;
+        }
 
-<script>
-  export default {
-    data () {
-      return {
-        drawer: null,
-        items: [
-          { title: 'Home', icon: 'dashboard' },
-          { title: 'About', icon: 'question_answer' },
-        ],
-      }
-    },
-  }
-</script>
+        ul {
+            padding: 0;
+            margin-bottom: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+
+            li{ 
+                font-size: 1.5em;
+                margin-bottom: 0;
+
+                &,a {
+                    padding: 1em .5em;
+
+                }
+               a {
+                   color:black;
+                   text-decoration: none;
+                }
+            }
+        }
+    }
+
+</style>
